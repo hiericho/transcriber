@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Transliteration Scribe</title>
+    <link rel="icon" href="assets/favicon.png" type="image/png"> <!-- Adjust path if your favicon is elsewhere -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <button class="dark-mode-toggle" id="dark-mode-button">Toggle Theme</button>
+
+    <div class="container">
+        <h1>
+            <span class="icon">🕊️</span>
+            Transliteration Scribe
+            <span class="icon">✨</span>
+        </h1>
+
+        <div class="random-section">
+            <button type="button" id="random-lang-button">🔮 Discover a Script</button>
+            <div id="current-random-lang">Select or Discover</div>
+        </div>
+
+        <p class="warning">
+            <strong>Note:</strong> This tool provides transliteration. Ensure necessary fonts are installed for script display.
+        </p>
+
+        <form id="transliteration-form">
+            <div class="options">
+                <div>
+                    <label for="script">Script:</label>
+                    <select name="script" id="script">
+                        <!-- Options will be populated by JavaScript -->
+                    </select>
+                </div>
+                <div>
+                    <label for="direction">Action:</label>
+                    <select name="direction" id="direction">
+                        <option value="to_latin" selected>To Latin</option>
+                        <option value="from_latin">From Latin</option>
+                    </select>
+                </div>
+            </div>
+
+            <label for="input-text">Input:</label>
+            <textarea name="input_text" id="input-text" placeholder="Enter text..."></textarea>
+            
+            <div class="controls">
+                <button type="button" id="process-button">📜 Transliterate</button>
+                <button type="button" id="swap-button"><span class="swap-icon">⇆</span> Swap</button>
+            </div>
+
+            <label for="output-text">Output:</label>
+            <textarea id="output-text" readonly placeholder="Result..."></textarea>
+            
+            <div id="error-message-area">
+                <!-- Error messages will appear here via JavaScript -->
+            </div>
+        </form>
+         <div class="footer">
+            <span class="icon">🖋️</span> A minimalist transliteration tool. <span class="icon">🌟</span>
+        </div>
+    </div>
+
+    <!-- Load ALL map files first (ensure paths are correct and all your maps are listed) -->
+    <script src="js/maps/binary_map.js"></script>
+    <script src="js/maps/cypro_minoan_map.js"></script>
+    <script src="js/maps/cypriot_map.js"></script>
+    <script src="js/maps/cyrillic_map.js"></script>
+    <script src="js/maps/ethiopic_map.js"></script>
+    <script src="js/maps/hiragana_map.js"></script>
+    <script src="js/maps/katakana_map.js"></script>
+    <script src="js/maps/mende_kikakui_map.js"></script>
+    <script src="js/maps/morse_map.js"></script>
+    <script src="js/maps/nushu_map.js"></script>
+    <script src="js/maps/ogham_map.js"></script>
+    <script src="js/maps/runic_map.js"></script> <!-- or runic_comprehensive_map.js, ensure filename matches -->
+    <script src="js/maps/vai_map.js"></script>
+    <script src="js/maps/yi_map.js"></script>
+    <!-- Add any other map files you created here -->
+
+    <script src="js/maps/all_maps_loader.js"></script> <!-- Loader to finalize maps -->
+    <script src="js/script.js"></script>       <!-- Main application logic -->
+</body>
+</html>

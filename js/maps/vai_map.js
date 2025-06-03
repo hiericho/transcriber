@@ -1,0 +1,45 @@
+// js/maps/vai_map.js
+window.ALL_SCRIPT_DATA = window.ALL_SCRIPT_DATA || {};
+
+window.ALL_SCRIPT_DATA["vai"] = {
+    description: "Vai Syllabary",
+    unicode_range: ['A500', 'A63F'],
+    to_latin_map: {
+        '\uA500': 'ee',   '\uA501': 'e',    '\uA502': 'i',    '\uA503': 'oo',
+        '\uA504': 'u',    '\uA505': 'a',    '\uA506': 'ba',   '\uA507': 'bɛ',
+        '\uA508': 'be',   '\uA509': 'bi',   '\uA50A': 'bo',   '\uA50B': 'bu',
+        '\uA50C': 'ɓa',   '\uA50D': 'ɓɛ',   '\uA50E': 'ɓi',   '\uA50F': 'ɓo',
+        '\uA510': 'ɓu',   '\uA511': 'da',   '\uA512': 'dɛ',   '\uA513': 'de',
+        '\uA514': 'di',   '\uA515': 'do',   '\uA516': 'du',   '\uA517': 'fa',
+        '\uA518': 'fe',   '\uA519': 'fi',   '\uA51A': 'fo',   '\uA51B': 'fu',
+        '\uA51C': 'ga',   '\uA51D': 'gɛ',   '\uA51E': 'ge',   '\uA51F': 'gi',
+        '\uA520': 'go',   '\uA521': 'gu',   '\uA522': 'ha',   '\uA523': 'he',
+        '\uA524': 'hi',   '\uA525': 'ho',   '\uA526': 'hu',   '\uA527': 'ka',
+        '\uA528': 'kɛ',   '\uA529': 'ke',   '\uA52A': 'ki',   '\uA52B': 'ko',
+        '\uA52C': 'ku',   '\uA52D': 'la',   '\uA52E': 'lɛ',   '\uA52F': 'le',
+        '\uA530': 'li',   '\uA531': 'lo',   '\uA532': 'lu',   '\uA533': 'ma',
+        '\uA534': 'mɛ',   '\uA535': 'me',   '\uA536': 'mi',   '\uA537': 'mo',
+        '\uA538': 'mu',   '\uA539': 'na',   '\uA53A': 'nɛ',   '\uA53B': 'ne',
+        '\uA53C': 'ni',   '\uA53D': 'no',   '\uA53E': 'nu',   '\uA53F': 'ŋa',
+        '\uA540': 'ŋɛ',   '\uA541': 'ŋe',   '\uA542': 'ŋi',   '\uA543': 'ŋo',
+        '\uA544': 'ŋu',   '\uA545': 'ŋ͡m',  '\uA546': 'ŋ͡mɛ', '\uA547': 'ŋ͡me',
+        '\uA548': 'ŋ͡mi', '\uA549': 'ŋ͡mo', '\uA54A': 'ŋ͡mu', '\uA54B': 'pa',
+        '\uA54C': 'pɛ',   '\uA54D': 'pe',   '\uA54E': 'pi',   '\uA54F': 'po',
+        '\uA550': 'pu',   '\uA551': 'sa',   '\uA552': 'sɛ',   '\uA553': 'se',
+        '\uA554': 'si',   '\uA555': 'so',   '\uA556': 'su',   '\uA557': 'ta',
+        '\uA558': 'tɛ',   '\uA559': 'te',   '\uA55A': 'ti',   '\uA55B': 'to',
+        '\uA55C': 'tu',   '\uA55D': 'va',   '\uA55E': 'vɛ',   '\uA55F': 've',
+        '\uA560': 'vi',   '\uA561': 'vo',   '\uA562': 'vu',   '\uA563': 'wa',
+        '\uA564': 'wɛ',   '\uA565': 'we',   '\uA566': 'wi',   '\uA567': 'wo',
+        '\uA568': 'wu',   '\uA569': 'ya',   '\uA56A': 'yɛ',   '\uA56B': 'ye',
+        '\uA56C': 'yi',   '\uA56D': 'yo',   '\uA56E': 'yu',   '\uA56F': 'za',
+        '\uA570': 'zɛ',   '\uA571': 'ze',   '\uA572': 'zi',   '\uA573': 'zo',
+        '\uA574': 'zu',   '\uA575': 'ʔa',   '\uA576': 'ʔɛ',   '\uA577': 'ʔe',
+        '\uA578': 'ʔi',   '\uA579': 'ʔo',   '\uA57A': 'ʔu',   '\uA57B': 'hɛ',
+        '\uA57C': 'hɔ',   '\uA57D': 'hɪ',   '\uA57E': 'hʊ',   '\uA57F': 'hɨ',
+        '\uA620': '0',    '\uA621': '1',    '\uA622': '2',    '\uA623': '3',
+        '\uA624': '4',    '\uA625': '5',    '\uA626': '6',    '\uA627': '7',
+        '\uA628': '8',    '\uA629': '9',
+        '\uA60C': ',',    '\uA60D': '.',    // Punctuation
+    }
+};
